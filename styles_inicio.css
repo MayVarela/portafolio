@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kdam+Thmor+Pro&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-color: black;
+    color: azure;
+    box-sizing: border-box;
+}
+
+/* ESTE ES EL MAIN */
+.cuerpo{
+    display: flex;
+    align-items: center;
+    margin: 10%;
+    justify-content: space-between;
+    gap: 80px;
+}
+/*ESTA ES LA SECCION DENTRO DEL MAIN*/
+.seccion_cuerpo{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/*Titulo H1*/
+.navega_laWeb{
+    font-size: 40px;
+}
+.titulo_resaltado{
+    color: rgb(252, 224, 129);
+    border: 1px solid rgb(252, 224, 129);
+}
+
+/*Parrafo*/
+.presentacion{
+    font-size: 25px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    color: rgb(205, 203, 203);
+}
+
+.subtitulo_enlaces{
+    font-size: 18px;
+    color: white;
+}
+
+.subtitulo_redes{
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/*CAJAS*/
+.caja_botones{
+    display: flex;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+.caja_boton_portafolio{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+.caja_botones_redes{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/*BOTONES*/
+.btn_portafolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 10px;
+    border:1px solid;
+    border-color: rgb(254, 233, 163);
+}
+.btn_portafolio:hover{
+    box-shadow: 0px 0px 10px 1px rgb(252, 224, 129);
+}
+.btn_redes{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 250px;
+    color: rgb(252, 224, 129);
+    border-radius: 5px;
+    border: 1px solid rgb(254, 233, 163);
+    padding: 15px 0;
+    text-decoration: none;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 16px;
+}
+.btn_redes:hover{
+    box-shadow: 0px 0px 10px 1px rgb(252, 224, 129);
+}
+
+/*iconos*/
+.icono_portafolio{
+    height: 170px;
+    width: 190px;
+    border-radius: 15px;
+}
+
+/*FOTO*/
+.miFoto{
+    border-radius: 90px;
+    max-width: 350px;
+    box-shadow: 0 0 30px 5px rgb(249, 235, 181);
+    padding: 10px;
+    
+}
+.miFoto:hover{
+    box-shadow: 0px 0px 40px 2px rgb(252, 224, 129);
+}
+
+footer{
+    background-color: rgb(252, 224, 129);
+    color: black;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    padding: 4px;
+}
