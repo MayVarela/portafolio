@@ -223,10 +223,18 @@ body {
 
 @media (max-width: 1200px){
     .header{
-        padding: 8%;
+      display: flex;
+        padding: 2%;
+        width: 100%;
+        height: 100%;
     }
     .header_menu{
-        justify-content: center;
+        justify-content: space-between;
+        display: flex;
+        gap: 10%;
+    }
+    .header_menu_link{
+      font-size: 1.3rem;
     }
     .cuerpo{
         flex-direction: column-reverse;
@@ -237,6 +245,12 @@ body {
         width: auto;
         gap: 30px;
     }
+    .presentacion_titulo{
+      font-size: 2rem;
+    }
+    .presentacion{
+      font-size: 1.5rem;
+    }
     .caja_botones{
         width: auto;
         flex-direction: column-reverse;
@@ -246,4 +260,8 @@ body {
     .seccion_derecha{
         width: auto;
     }
+    .footer{
+      padding: 2%;
+      width: auto;
+  }
 }
