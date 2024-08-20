@@ -57,6 +57,9 @@ body{
     border: none;
     background-color: var(--color-primario);
     border-radius: 5px;
+    padding: 1%;
+    outline: none;
+    resize: none;
 }
 
 .div_salida_texto {
