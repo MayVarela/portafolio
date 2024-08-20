@@ -4,7 +4,6 @@
   --color-primario:#0e002e ;
   --color-secundario: rgb(180, 179, 181);
   --color-terciario: turquoise;
-  --color-subtitulos: var(--color-primario);
   --color-bordes: turquoise;
   --color-header-footer: rgb(5, 0, 34);
   --color-decoracion: #6a5ff7;
@@ -43,7 +42,7 @@ body {
   padding: 2% 8% 5% 10%;
   gap: 10px;
   height: 100%;
-  background-image: url('/assets/fondo4.jpg');
+  background-image: url('https://th.bing.com/th/id/OIG1.FcOjdHwQwfdQF1SVwwUI?w=1024&h=1024&rs=1&pid=ImgDetMain');
   background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
