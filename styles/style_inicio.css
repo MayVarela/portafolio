@@ -2,10 +2,10 @@
 
 :root {
   --color-primario:#0e002e ;
-  --color-secundario: rgb(181, 179, 179);
-  --color-terciario: rgb(252, 224, 129);
-  --color-subtitulos: white;
-  --color-bordes: rgb(247, 228, 165);
+  --color-secundario: rgb(180, 179, 181);
+  --color-terciario: turquoise;
+  --color-subtitulos: var(--color-primario);
+  --color-bordes: turquoise;
   --color-header-footer: rgb(5, 0, 34);
   --color-decoracion: #6a5ff7;
 
@@ -39,28 +39,42 @@ body {
 }
 .cuerpo {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 4% 8% 5% 10%;
-  gap: 100px;
+  padding: 2% 8% 5% 10%;
+  gap: 10px;
+  height: 100%;
+  background-image: url('/assets/fondo4.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 1hv; /* Ajusta la altura del main para que ocupe toda la pantalla */
 }
-.seccion_cuerpo {
-  width: 50%;
+.seccion_cuerpo{
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 15px;
+  height: 100%;
+  width: 80%;
 }
 .presentacion_titulo {
+  color: var(--color-primario);
   font-family: var(--fuente-krona);
   font-size: 2.25rem;
+  padding: 2%;
 }
 .titulo_resaltado {
-  color: var(--color-terciario);
-  border: 1px solid var(--color-bordes);
+  padding: 3px;
+  background-color: var(--color-primario);
+  color: turquoise;
+  border: 1px solid turquoise;
 }
 .presentacion {
+  background-color: var(--color-primario);
+  border-radius: 15px;
+  padding: 2%;
   font-size: 1.5rem;
   font-family: var(--fuente-monserrat);
+  font-weight: bold;
   color: var(--color-secundario);
 }
 .presentacion a {
@@ -70,6 +84,7 @@ body {
 
 .subtitulo_enlaces {
   font-family: var(--fuente-monserrat);
+  font-weight: bold;
   font-size: 1rem;
   color: var(--color-decoracion);
   text-decoration: none;
@@ -78,7 +93,7 @@ body {
 .caja_botones {
   display: flex;
   width: 50%;
-  padding: 0% 0% 0% 10%;
+  padding: 2% 0% 0% 10%;
   justify-content: space-between;
   align-items: center;
   gap: 150px;
@@ -95,7 +110,6 @@ body {
   align-items: center;
   color: var(--color-subtitulos);
   font-size: 1rem;
-  text-decoration: none;
 }
 .caja_boton_portafolio {
   display: flex;
@@ -107,6 +121,7 @@ body {
 
 /*BOTONES*/
 .btn_redes {
+  background-color: var(--color-primario);
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -124,6 +139,7 @@ body {
   box-shadow: 0px 0px 10px 1px var(--color-terciario);
 }
 .btn_portafolio {
+  background-color: var(--color-primario);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -164,7 +180,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 40px;
-  box-shadow: 0 0 10px 6px var(--color-decoracion);
+  box-shadow: 0 0 10px 6px turquoise;
   width: 50%;
 }
 .footer {
@@ -182,6 +198,7 @@ body {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 2% 0% 0% 5%;
   gap: 50px;
   width: 50%;
 }
@@ -195,16 +212,19 @@ body {
 }
 .skill {
   display: flex;
-  gap: 5px;
+  gap: 20px;
   margin-bottom: 20px;
   width: 50%;
   font-size: 10px;
   letter-spacing: 1px;
+  background-color: var(--color-primario);
+  border-radius: 10px;
   color: var(--color-terciario);
   font-family: var(--fuente-krona);
+  padding: 1%;
 }
 .progress-bar {
-  background-color: var(--color-terciario);
+  background-color: var(--color-primario);
   border-radius: 5px;
   overflow: hidden;
   height: 15px;
@@ -212,11 +232,12 @@ body {
 }
 
 .progress {
-  background-color: #3e3899;
+  background-color: var(--color-terciario);
   height: 100%;
   text-align: right;
   padding-right: 10px;
-  color: var(--color-terciario);
+  color: var(--color-primario);
+  font-weight: bold;
   line-height: 20px; /* Align text vertically */
   justify-content: center;
 }
@@ -224,14 +245,13 @@ body {
 @media (max-width: 1200px){
     .header{
       display: flex;
-        padding: 2%;
+        padding: 4%;
         width: 100%;
         height: 100%;
     }
     .header_menu{
-        justify-content: space-between;
-        display: flex;
-        gap: 10%;
+      justify-content: space-between;
+      gap: 10%;
     }
     .header_menu_link{
       font-size: 1.3rem;
