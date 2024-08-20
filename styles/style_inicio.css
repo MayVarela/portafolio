@@ -31,11 +31,6 @@
   color: var(--color-terciario);
   text-decoration: none;
 }
-
-body {
-  background-color: var(--color-primario);
-  color: var(--color-subtitulos);
-}
 .cuerpo {
   display: flex;
   align-items: center;
