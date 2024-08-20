@@ -44,6 +44,11 @@ body{
   padding: 2% 8% 5% 10%;
   gap: 10px;
   height: 100%;
+  background-image: url('/assets/fondo4.jpg');
+  background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  height: 100hv; /* Ajusta la altura del main para que ocupe toda la pantalla */
 }
 .seccion_cuerpo{
   display: flex;
